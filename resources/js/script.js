@@ -12,6 +12,33 @@ $(document).ready(function() {
             }, offset: '10%'
     })
     
+    /* Animations on scroll */
+    var waypoint1 = new Waypoint({
+        element: document.querySelector('.js--roles'),
+            handler: function(direction) {
+                $('.js--roles').addClass('animated fadeIn');
+            },offset: '50%'
+    })
+    
+    var waypoint2 = new Waypoint({
+        element: document.querySelector('.js--heading'),
+            handler: function(direction) {
+                $('.js--heading').addClass('animated swing');
+            },offset: '50%'
+    })
+    
+     var waypoint3 = new Waypoint({
+        element: document.querySelector('.js--quote'),
+            handler: function(direction) {
+                if(direction == "down"){ 
+                    $('.chevron').addClass('scroll-to-top');
+                }
+                else {
+                    $('.chevron').removeClass('scroll-to-top');
+                }
+            }, offset: '10%'
+    })
+    
     /* Smooth scrolling */
 
     // Select all links with hashes and Remove links that don't actually link to anything
@@ -44,33 +71,6 @@ $(document).ready(function() {
             }
         }
     });
-    
-    /* Animations on scroll */
-    var waypoint1 = new Waypoint({
-        element: document.querySelector('.js--roles'),
-            handler: function(direction) {
-                $('.js--roles').addClass('animated fadeIn');
-            },offset: '50%'
-    })
-    
-    var waypoint2 = new Waypoint({
-        element: document.querySelector('.js--heading'),
-            handler: function(direction) {
-                $('.js--heading').addClass('animated swing');
-            },offset: '50%'
-    })
-    
-     var waypoint3 = new Waypoint({
-        element: document.querySelector('.js--quote'),
-            handler: function(direction) {
-                if(direction == "down"){ 
-                    $('.chevron').addClass('scroll-to-top');
-                }
-                else {
-                    $('.chevron').removeClass('scroll-to-top');
-                }
-            }, offset: '10%'
-    })
 });
 
 

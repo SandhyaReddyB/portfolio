@@ -6,8 +6,9 @@
         <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
         <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">        
         <link rel="stylesheet" type="text/css" href="vendors/css/ionicons.min.css">
-        <link rel="stylesheet" type="text/css" href="vendors/css/animate.css">      
+        <link rel="stylesheet" type="text/css" href="vendors/css/animate.css">
         <link rel="stylesheet" type="text/css" href="resources/css/style.css">
+        <link rel="stylesheet" type="text/css" href="resources/css/queries.css"> 
         <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400" rel="stylesheet">
         <title>Sandhya Reddy</title>
         
@@ -22,11 +23,11 @@
     </head>
     <body>
         <header>
-            <nav>
-                <div class="row top">
+            <nav class="top">
+                <div class="row">
                     <ul class="main-nav">
                         <li class="menu-item"><a href="#skill-set">Skill Set</a></li>
-                        <li class="menu-item"><a href="#applications">Applications</a></li>
+                        <li class="menu-item"><a href="#apps">Applications</a></li>
                         <li class="menu-item"><a href="#work-exp">Work Experience</a></li>
                         <li class="menu-item"><a href="#drop-message">Drop a Message</a></li>
                     </ul>
@@ -62,7 +63,7 @@
                             <tr>
                                 <td class="name">HTML5</td>
                                 <td class="expertise">
-                                    <canvas class="myCanvas" width="600px" height="40px" style="border:1px solid #d3d3d3;">
+                                    <canvas class="myCanvas">
                                         Your browser does not support the HTML5 canvas tag.
                                     </canvas>
                                 </td>
@@ -71,16 +72,16 @@
                            <tr>
                                 <td class="name">CSS/CSS3</td>
                                 <td class="expertise">
-                                    <canvas class="myCanvas" width="600px" height="40px" style="border:1px solid #d3d3d3;">
+                                    <canvas class="myCanvas">
                                         Your browser does not support the HTML5 canvas tag.
                                     </canvas>
                                 </td>
-                                <td class="percent">50</td>
+                                <td class="percent">65</td>
                            </tr>
                            <tr>
                                 <td class="name">JavaScript</td>
                                 <td class="expertise">
-                                    <canvas class="myCanvas" width="600px" height="40px" style="border:1px solid #d3d3d3;">
+                                    <canvas class="myCanvas">
                                         Your browser does not support the HTML5 canvas tag.
                                     </canvas>
                                 </td>
@@ -89,31 +90,33 @@
                            <tr>
                                 <td class="name">Angular 2</td>
                                 <td class="expertise">
-                                    <canvas class="myCanvas" width="600px" height="40px" style="border:1px solid #d3d3d3;">
+                                    <canvas class="myCanvas">
                                         Your browser does not support the HTML5 canvas tag.
                                     </canvas>
                                 </td>
-                                <td class="percent">70</td>
+                                <td class="percent">65</td>
                            </tr>
                            <tr>
-                                <td class="name">PHP</td>
+                                <td class="name">Core Java</td>
                                 <td class="expertise">
-                                    <canvas class="myCanvas" width="600px" height="40px" style="border:1px solid #d3d3d3;">
+                                    <canvas class="myCanvas">
                                         Your browser does not support the HTML5 canvas tag.
                                     </canvas>
                                 </td>
                                 <td class="percent">50</td>
                            </tr>
-                           <tr><td>Others: Jquery, Git, Sass, TypeScript Essentials, Rest API, JIRA, SQL, LAMP Stack</td></tr>
+                           <tr><td class="name">Others</td> 
+                               <td class="others">Bootstrap, Jquery, Git, Sass, TypeScript Essentials, Rest API, JIRA, SQL, LAMP Stack, ITSM, PHP</td>
+                           </tr>
                         </tbody>
                     </table>
                 </div>
             </div>
         </section>
-        <section class="section-applications" id="applications">
+        <section class="section-applications" id="apps">
             <ul class="applications clearfix">
                 <li>
-                    <a href="#">
+                    <a href="http://ng-github-profile-searcher.s3-website.eu-west-2.amazonaws.com/" target="_blank">
                         <div class="pic" style="background-image:linear-gradient(rgba(0, 0, 0,0.1),rgba(0, 0, 0, 0.9)),url(resources/css/img/1.jpg);">
                             <span class="app">Angular 2 Application <br>Github profile Searcher</span>
 
@@ -121,30 +124,30 @@
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="https://sandhyareddyb.github.io/task-manager/" target="_blank">
                         <div class="pic" style="background-image:linear-gradient(rgba(0, 0, 0,0.1),rgba(0, 0, 0, 0.9)),url(resources/css/img/2.jpg);">
-                            <span class="app">Angular 2 Application <br>Github profile Searcher</span>
+                            <span class="app">HTML5 Application<br>Daily Task Manager</span>
 
                         </div>
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href="https://sandhyareddyb.github.io/pig-game/" target="_blank">
                         <div class="pic" style="background-image:linear-gradient(rgba(0, 0, 0,0.1),rgba(0, 0, 0, 0.9)),url(resources/css/img/3.jpg);">
-                            <span class="app">Angular 2 Application <br>Github profile Searcher</span>
+                            <span class="app">JavaScript Application<br>The Pig Game</span>
 
                         </div>
                     </a>
                 </li>
                 <li>
-                    <a href="#">
-                        <div class="pic" style="background-image:linear-gradient(rgba(0, 0, 0,0.1),rgba(0, 0, 0, 0.9)),url(resources/css/img/4.jpg);">
-                            <span class="app">Angular 2 Application <br>Github profile Searcher</span>
-
+                    <a href="https://sandhyareddyb.github.io/budget-app/" target="_blank">
+                        <div class="pic" style="background-image:linear-gradient(rgba(0, 0, 0,0.1),rgba(0, 0, 0, 0.9)),url(resources/css/img/JS_Bootstrap.png);">
+                            <span class="app">JavaScript Application<br>Monthly Budget App</span>
                         </div>
                     </a>
                 </li>
             </ul>
+           
             <ul class="applications clearfix">
                 <li>
                     <a href="#">
@@ -185,9 +188,9 @@
                 <h2>Work Experience</h2>
             </div>
             <div class="row">
-                <div class="col span-1-of-2 roles js--roles">
+                <div class="col span-1-of-2 js--roles">
                     <h3>INFOSYS LIMITED, Aug 2011 to May 2017</h3>
-                    <ul>
+                    <ul class="roles">
                         <li>Senior Systems Engineer
                             <p>Worked as a Front end developer, Onsite co-ordinator</p>
                             <p>Worked for clients EDF Energy, AstraZeneca</p>
@@ -219,48 +222,54 @@
                 </div>
              </div>
         </section>
-         <section class="section-form" id="drop-message">
-            <div class="row">
-                <h2>I'm happy to hear from you</h2>
+        <div class="map-container">
+            <div id="map">Map</div>
+            <div class="form-container" id="drop-message">
+                <div class="row">
+                    <h2>I'm happy to hear from you</h2>
+                </div>
+                <div class="row">
+                    <div class="form-success">Thank you! Your message is sent.</div>
+                    <div class="form-error">Oops! Something went wrong.</div>
+                </div>
+                <div class="row">
+                    <form method="post" action="resources/mailer.php" class="contact-form" id="form">
+                        <div class="row">
+                            <div class="col span-1-of-3">
+                                <label for="name">Name</label>
+                            </div>
+                            <div class="col span-2-of-3">
+                                <input type="text" id="name" name="name" placeholder="Your name" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col span-1-of-3">
+                                <label for="email">Email</label>
+                            </div>
+                            <div class="col span-2-of-3">
+                                <input type="text" id="name" name="name" placeholder="Your email" required>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col span-1-of-3">
+                                <label for="message">Drop a message</label>
+                            </div>
+                            <div class="col span-2-of-3">
+                                <textarea id="message" name="message" rows="4" placeholder="Message"></textarea>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col span-1-of-3">
+                                <label>&nbsp;</label>
+                            </div>
+                            <div class="col span-2-of-3">
+                                <input type="submit" class="btn" type="submit" value="Send it !">
+                            </div>
+                        </div>
+                    </form>
+                </div>
             </div>
-            <div class="row">
-                <form method="post" action="#" class="contact-form">
-                    <div class="row">
-                        <div class="col span-1-of-3">
-                            <label for="name">Name</label>
-                        </div>
-                        <div class="col span-2-of-3">
-                            <input type="text" id="name" name="name" placeholder="Your name" required>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col span-1-of-3">
-                            <label for="email">Email</label>
-                        </div>
-                        <div class="col span-2-of-3">
-                            <input type="text" id="name" name="name" placeholder="Your email" required>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col span-1-of-3">
-                            <label for="message">Drop us a line</label>
-                        </div>
-                        <div class="col span-2-of-3">
-                            <textarea id="message" name="message" rows="4" placeholder="Message"></textarea>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col span-1-of-3">
-                            <label>&nbsp;</label>
-                        </div>
-                        <div class="col span-2-of-3">
-                            <input type="submit" class="btn btn-full" type="submit" value="Send it!">
-                        </div>
-                    </div>
-                </form>
-            </div>
-        </section>
-        <div class="chevron"><a href="#top"><i class="ion-chevron-up"></i></a></div>
+        </div>
         <footer>
             <div class="row">
                 <div class="col span-1-of-2">
@@ -276,9 +285,11 @@
                 </div>
             </div>
         </footer>
+        <div class="chevron"><a href="#top"><i class="ion-chevron-up"></i></a></div>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-        <script src="resources/js/custom.js"></script>
         <script src="vendors/js/jquery.waypoints.min.js"></script>
         <script src="resources/js/script.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDwFZhlHd8KsQjJCMwhAh_YCEVB8D9RHI4&callback=showMap"></script>
+        <script src="resources/js/custom.js"></script>
     </body>
 </html>
