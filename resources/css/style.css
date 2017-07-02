@@ -2,12 +2,12 @@
 /* Basic Setup
 /****************************/
 
-/*-----color:#e67e22 -----*/
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
+
 html {
     background-color: #fff;
     color: #555;
@@ -16,7 +16,9 @@ html {
     font-size: 20px;
     text-rendering: optimizeLegibility;
 }
+
 .clearfix { zoom: 1; }
+
 .clearfix:after {
     content: '.';
     clear:both;
@@ -25,9 +27,9 @@ html {
     visibility: hidden;
 }
 
-/*----------------------------------------------*/
+/*****************************************/
 /* Reusable Components */
-/*----------------------------------------------*/
+/*****************************************/
 
 .row {
     max-width: 1140px;
@@ -38,21 +40,9 @@ section {
     padding: 70px 0px;
 }
 
-.box {
-    padding: 1%;
-}
-
-/*-------Paragraphs---------*/
-.long-copy {
-    line-height: 145%;
-    width: 70%;
-    margin-left: 15%;
-}
-
 /*-----------Headings--------------*/
 
 h1, h2, h3, h4 {
-    
     font-weight: 300;
 }
 
@@ -91,9 +81,6 @@ h2:after {
     background-color: #1cb5e0;
     margin: 2% auto 0px auto;
 }
-
-/*---------Icons------------*/
-
 
 
 /****************************/
@@ -153,11 +140,11 @@ header {
     color: #d3d3d3;
 }
 
-/*----------------------------------------------*/
+/******************************************/
 /* Navigation */
-/*----------------------------------------------*/
+/******************************************/
 
-/*--------------Main Nav------------------------*/
+/*--------------Main Nav------------------*/
 
 .main-nav {
     margin-top: 55px;
@@ -186,7 +173,7 @@ header {
     border-bottom: 2px solid #1cb5e0;
 }
 
-/*--------------Sticky Nav------------------------*/
+/*--------------Sticky Nav-------------------*/
 
 .sticky {
     position: fixed;
@@ -225,6 +212,7 @@ header {
 /****************************/
 /* Quote
 /****************************/
+
 .quote {
     margin: 12px 0px;
 }
@@ -253,6 +241,7 @@ cite {
 /****************************/
 /* Skillset
 /****************************/
+
 .skill-set {
     background-color: #f4f4f4;
 }
@@ -384,13 +373,14 @@ figure {
 .infy-img {
     width: 90%;
     height: 100%;
-
+    margin: 5% 0;
 }
 
 
 /****************************/
 /* Education */
 /****************************/
+
 .education {
     background-color: #f4f4f4;
     text-align: center;
@@ -403,6 +393,7 @@ figure {
 /******************************************/
 /* Contact Form */
 /******************************************/
+
 .map-container {
     width: 100%;
     height: 400px;
@@ -456,6 +447,7 @@ textarea {
     margin-right:16px;
     border: 1px solid #0794ba;
 }
+
 .btn:hover {
     background-color: #077998;
     box-shadow: 0px 2px 2px #1cb5e0;
@@ -472,18 +464,22 @@ textarea {
     box-shadow: 0px 1px 2px #b2b0b0;
     font-size: 90%;    
 }
+
 .form-error {
     background-color: #e50606;
     color: #eeeeee;
     display: none;
 }
+
 .form-success {
     background-color: #71d471;
     display:block;
 }
+
 .form-container h2{
     padding-top: 10px;
 }
+
 /*******************************************/
 /* Scroll To Top
 /*******************************************/
@@ -497,6 +493,7 @@ textarea {
     height: 38px;
     z-index: 9999;
 }
+
 .scroll-to-top a:link, .scroll-to-top a:visited {
     text-decoration: none;
     border-radius: 50%;
@@ -505,9 +502,9 @@ textarea {
     padding: 8px 12px;
 }
 
-/*-----------------------------------------*/
+/**************************************/
 /* Footer */
-/*-----------------------------------------*/
+/**************************************/
 
 footer {
     background-color: #333;
@@ -573,9 +570,9 @@ footer p {
 
 
 
-/*-----------------------------------------*/
+/*************************************/
 /* Animations  */
-/*-----------------------------------------*/
+/*************************************/
 
 .js--roles {
     opacity: 0;
