@@ -41,7 +41,7 @@ function fillCanvasRect(args,i) {
 function showMap() {
     var myPos = new google.maps.LatLng(52.3052014,4.6995456); 
     var myCenter = new google.maps.LatLng(52.2889264,4.8224616);
-    var mapCanvas = document.getElementById("map");
+    var mapCanvas = document.querySelector(".map");
     var mapOptions = {
         center: myCenter, 
         zoom: 12, 

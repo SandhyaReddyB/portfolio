@@ -70,7 +70,7 @@ h2 {
     word-spacing: 2px;
     letter-spacing: 1px;
     text-align: center;
-    margin-bottom: 2%;
+    margin-bottom: 3%;
 }
 
 h3 {
@@ -121,7 +121,7 @@ header {
     height: 120px;
     width: auto;
     vertical-align: middle;
-    opacity: 0.70;
+    opacity: 0.8;
     float: left;
     display: inline-block;
 }
@@ -131,6 +131,7 @@ header {
     display:inline-block;
     float: left;
     margin-left: 10px;
+    margin-top: 3px;
 }
 
 .details a:link, .details a:visited {
@@ -205,18 +206,34 @@ header {
     padding: 16px 0px;
 }
 
+/*-------- Mobile navi ----------*/
+
+.mobile-nav-icon {
+    float: right;
+    margin-top: 30px;
+    cursor: pointer;
+    display: none;
+}
+
+.mobile-nav-icon i {
+    font-size: 200%;
+    color: #fff;
+    position: relative;
+}
 
 
 /****************************/
 /* Quote
 /****************************/
+.quote {
+    margin: 12px 0px;
+}
 
 blockquote {
     padding: 2%;
     font-style: italic;
     line-height: 145%;
     position: relative;
-    margin-top: 40px;
     text-align: center;
 }
 
@@ -225,13 +242,12 @@ blockquote:before {
     font-size: 500%;
     display: block;
     position: absolute;
-    left: 30%;
-    
+    left: 32%;
 }
 
 cite {
     position: absolute;
-    right: 25%;
+    right: 23%;
 }
 
 /****************************/
@@ -240,7 +256,6 @@ cite {
 .skill-set {
     background-color: #f4f4f4;
 }
-
 table, tbody {
     width: 100%;    
 }
@@ -265,8 +280,11 @@ table, tbody {
     height: 100%;
 }
 .name,.percent {
-    width: 15%;
+    width: 17%;
     padding: 1%;
+}
+.percent {
+    text-align: center;
 }
 .percent:after {
     content: "%";
@@ -294,33 +312,39 @@ table, tbody {
 }
 
 .applications li {
+    display: block;
     float: left;
     width: 25%;
     overflow: hidden;
     margin:0;
     height: 250px;
+    background-color: #000;
     
 }
 .applications .pic {
     margin: 0;
     overflow: hidden;
-    background-color: #000;
     width:100%;
-    height:100%;
-    background-size:100% 100%;
+    height: 100%;
     position: relative;
+    background-size:100% 100%;
     opacity: 0.8;
+    -webkit-transform: scale(1.15);
+    -ms-transform: scale(1.15);
     transform: scale(1.15);
+    -webkit-transition: -webkit-transform 0.5s, opacity 0.5s;
     transition: transform 0.5s, opacity 0.5s;
 }
 
 .applications .pic:hover {
     opacity: 1;
+    -webkit-transform: scale(1.03);
+    -ms-transform: scale(1.03);
     transform: scale(1.03);
 }
 
 .app {
-    text-align: justify;
+    text-align: left;
     font-style: italic;
     position:absolute;
     bottom: 20%;
@@ -329,35 +353,40 @@ table, tbody {
     color: #d8d8d8;
 }
 
-
 /****************************/
 /* Experience */
 /****************************/
 
-.section-experience {
-    font-size: 90%;
+.section-experience li{
+    font-size: 100%;
     letter-spacing: 1px;
     word-spacing: 2px;
     line-height: 120%;
 }
 
-.section-experience p {
+.section-experience li p{
     font-size: 85%;
-    letter-spacing: 1px;
-    word-spacing: 2px;
+    word-spacing: 0px;
+    margin: 2px 0px;
 }
 
-.section-experience h3{
-    padding-left: 6%;
-}
 .roles {
-    margin-top: 20px;
-    padding-left: 10%;
+    width:80%;
+    margin: 1% 0 1% 10%;
 }
+
+figure {
+    margin: 0px;
+    width: 100%;
+    height: 280px;
+}
+
 .infy-img {
-    width: 80%;
-    margin-top: 20px;
+    width: 90%;
+    height: 100%;
+
 }
+
 
 /****************************/
 /* Education */
@@ -380,9 +409,10 @@ table, tbody {
     position: relative;
 }
 
-#map {
+.map {
     width: 100%; 
     height: 100%;
+    z-index: 0;
 }
 
 .form-container {
@@ -445,13 +475,15 @@ textarea {
 .form-error {
     background-color: #e50606;
     color: #eeeeee;
-    display: block;
+    display: none;
 }
 .form-success {
     background-color: #71d471;
-    display:none;
+    display:block;
 }
-
+.form-container h2{
+    padding-top: 10px;
+}
 /*******************************************/
 /* Scroll To Top
 /*******************************************/

@@ -7,7 +7,6 @@
     header {
         height: 70vh;
     }
-    
     .contact {
         transform: translate(-130%,-15%);
         padding: 2px;
@@ -19,11 +18,15 @@
         padding: 50px 0px;
     }
     cite {
-        right: 18%;
+        right: 15%;
     }
     .map-container {
         height: 350px;
     }
+    .form-success, .form-error {
+        width: 70%;
+    }
+   
 }
 
 /* Small tablets to big tablets: from 768px to 1023px */
@@ -34,18 +37,194 @@
     section {
         padding: 60px 0;
     }
+    header {
+        height: 65vh;
+    }
     .long-copy {
         width: 80%;
         margin-left: 10%
+    }
+    .contact {
+        width: 50%;
+        left: 60%;
+        transform: translate(-110%,-15%);
+    }
+    .menu-item {
+        margin-left: 0px;
+        margin-right: 25px;
+    }
+    .profile-pic {
+        height: 100px;
+    }
+    .details a:link, .details a:visited {
+        padding: 3px;
+    }
+    blockquote:before {
+        left: 28%;
+    }
+    cite {
+        right: 12%;
+    }
+    h2 {
+        font-size: 160%;
+    }
+    .applications li {
+        height: 220px;
+    }
+    .map-container {
+        height: 330px;
     }
 }
 
 /* Small phones to small tablets: from 481px to 767px */
 @media only screen and (max-width: 767px) {
+    body { font-size: 16px; }
+    section { padding: 30px 0; }
     
-}
+    .row { padding: 0 4%; }
+    
+    .col { 
+        width: 100%;
+        margin: 0 0 4% 0;
+    }
+    header {
+        height: 80vh;
+    }
+    .contact {
+        width: 65%;
+        transform: translate(-38%,-15%);
+    }
+    
+    .main-nav { display: none; }
+    .mobile-nav-icon {display: inline-block;}
+    
+    .main-nav {
+        float: left;
+        margin-top: 30px;
+        margin-left: 25px;
+    }
+    
+    .main-nav li {
+        display: block;
+    }
+    
+    .main-nav li a:link,
+    .main-nav li a:visited {
+        display: block;
+        border: 0;
+        font-size: 100%;
+    }
+    
+    .sticky .main-nav { margin-top: 10px; }
+    .sticky .main-nav li a:link,
+    .sticky .main-nav li a:visited { padding: 10px 0; }
+    .sticky .mobile-nav-icon { margin-top: 10px; }
+    .sticky .mobile-nav-icon i { color: #555; }
+    
+    h1 { font-size: 180%; }
+    h2 { font-size: 150%; }
+    
+    .long-copy {
+        width: 100%;
+        margin-left: 0%;
+    }
+    
+    .skill-set tr {
+        width: 90%;
+        margin: 1% 5%;
+    }
+    .expertise {
+        height: 35px;
+    }
+    .name {
+        width: 25%;
+    }
+    .percent {
+        width: 5%;
+    }
+    .others {
+        width: 70%;
+    }
+    .applications li {
+        height: 180px;
+    }
+    figure {
+        margin: 0px;
+    }
+    .infy-img {
+        width: 100%;
+    }
+    .section-experience h3{
+        text-align: center;
+        margin: 10px 0;
+    }
+    .section-experience li {
+        font-size: 120%;
+    }
+    .section-experience li p {
+        font-size: 85%;
+    }
+    .roles {
+        width:90%;
+        margin: 0 auto;
+    }
+    .map-container {
+        height: auto;
+    }
 
+    .map {
+        height: 300px;
+        position: relative;
+    }
+
+    .form-container {
+       font-size: 120%;
+        width: 100%;
+        height: auto;
+        position: relative;
+        z-index: 10;
+        padding: 30px 0px;
+    }
+    .contact-form {
+        width:90%;
+        margin:10px 5% 0px 5%;
+        font-size: 90%;
+    }
+    .btn {
+        margin-top: -5%;
+        padding: 2%;
+    }
+    footer {
+        padding: 10px;
+    }
+    footer p, footer .social-links {
+        float: none;
+        text-align: center;
+        font-size: 120%;
+    }
+    .scroll-to-top {
+        bottom: 1%;
+    }
+}
 /* Small phones from 0px to 480px */
 @media only screen and (max-width: 480px) {
-    
+    section { padding: 25px 0; }
+    header {
+        height: 70vh;
+    }
+    .contact-form {width: 100%; }
+    .contact {
+        width: 100%;
+        transform: translate(-50%,-15%);
+    }
+    .profile-pic {
+        height: 90px;
+    }
+    blockquote:before {
+        left: 10%;
+        margin-top: 5px;
+    }
+    .scroll-to-top {
+        right: 20%;
+    }
 }
